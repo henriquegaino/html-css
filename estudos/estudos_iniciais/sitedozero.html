@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            background-color: antiquewhite;
+            margin: 0px;
+        }
+        header{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+        nav{
+            background-color: gray;
+            padding: 3px;
+            box-shadow: 2px 2px 8px black;
+        }
+        nav > a{
+            text-decoration: none;
+            color: aliceblue;
+            font-weight: bold;
+            margin-right: 30px;
+        }
+        nav > a:hover{
+            text-decoration: overline;
+            color: red;
+        }
+        main{
+            background-color: rgb(244, 244, 146);
+            margin: 10px;
+            border-radius: 10px;
+        }
+        article > aside{
+            background-color: burlywood;
+        }
+        footer{
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 1px;
+            margin: 0px;
+        }
+        footer > p{
+            margin: 0px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="">Link</a>
+            <a href="">Link</a>
+            <a href="">Link</a>
+            <a href="">Link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="Assuntos">
+
+        </section>
+        <section id="Notícias">
+            <article>
+                <h2>Notícias sobre o Brasil</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur similique optio facere numquam rem velit sequi praesentium earum deleniti aspernatur quia minus maiores necessitatibus fugit, possimus in adipisci veritatis non? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere ad ratione ullam perspiciatis assumenda consequuntur, voluptatibus illum accusantium dolorum maiores aliquid voluptatem fuga aliquam molestiae id eligendi eum dolor sunt. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium atque repudiandae voluptatum! Corporis tempora repellendus iste incidunt consectetur, porro fugiat, consequuntur eaque exercitationem qui maiores labore, eius iure ipsam dicta! lo</p>
+                <aside>Texto escrito por José Marcos</aside>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido por <em>Henrique Gaino</em></p>
+    </footer>
+</body>
+</html>
