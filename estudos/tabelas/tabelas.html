@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        thead th {
+            position: sticky;
+            top: 0; /* Mantém o cabeçalho fixo no topo */
+            z-index: 1; /* Garante que o cabeçalho fique acima do conteúdo */
+            box-shadow: 0 4px 4px -1px rgba(0, 0, 0, 0.4); /* Sombra para destacar o cabeçalho */
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        tbody tr:nth-child(odd) { /* Zebrado */
+            background-color: rgb(192, 192, 192);
+        }
+
+        tbody tr:nth-child(even) {
+            background-color: #939393;
+        }
+        
+        caption{
+            font-weight: bold;
+            font-size: 1em;
+            padding: 20px;
+        }
+        table{
+            width: 400px;
+            border-collapse: collapse;
+            overflow-x: auto; /* Permite rolagem horizontal */
+            display: block; /* Permite rolagem horizontal */
+        }
+        td,th{
+            border: 1px solid black;
+            padding: 10px;
+            max-width: 200px; /* Largura mínima para as células */
+        }
+        thead, tfoot, th{
+            background-color: gray;
+            color: white;
+        }
+        td.num{
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <h1>Estudando Tabelas</h1>
+    <!-- Hierarquia de Tabelas
+    CAPTION (legenda)
+    TABLE
+    TABLE ROW tr
+    TABLE HEADER th
+    TABLE DATA td --> 
+    <table>
+        <tr>
+            <td>A1</td>
+            <td>B1</td>
+            <td>C1</td>
+        </tr>
+        <tr>
+        </tr>
+            <td>A2</td>
+            <td>B2</td>
+            <td>C2</td>
+        </tr>
+        <tr></tr>
+            <td>A3</td>
+            <td>B3</td>
+            <td>C3</td>
+        </tr>
+
+    </table>
+    <h1>Tabelas Grandes</h1>
+    <table>
+        <caption>População nos Estados do Brasil</caption>
+        <thead>
+            <tr>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 100px;">População</th>
+            </tr>
+        </thead>
+            <tbody>
+                <tr>
+                    <td>Acre</td>
+                    <td class="num">906 876</td>
+                </tr>
+                <tr>
+                    <td>Alagoas</td>
+                    <td class="num">3 409 000</td>
+                </tr>
+                <tr>
+                    <td>Amapá</td>
+                    <td class="num">877 613</td>
+                </tr>
+                <tr>
+                    <td>Amazonas</td>
+                    <td class="num">4 355 000</td>
+                </tr>
+                <tr>
+                    <td>Bahia</td>
+                    <td class="num">15 508 000</td>
+                </tr>
+                <tr>
+                    <td>Ceará</td>
+                    <td class="num">9 420 000</td>
+                </tr>
+                <tr>
+                    <td>Distrito Federal</td>
+                    <td class="num">3 236 000</td>
+                </tr>
+                <tr>
+                    <td>Espírito Santo</td>
+                    <td class="num">4 108 000</td>
+                </tr>
+                <tr>
+                    <td>Goiás</td>
+                    <td class="num">7 354 000</td>
+                </tr>
+                <tr>
+                    <td>Maranhão</td>
+                    <td class="num">7 244 000</td>
+                </tr>
+                <tr>
+                    <td>Mato Grosso</td>
+                    <td class="num">3 771 000</td>
+                </tr>
+                <tr>
+                    <td>Mato Grosso do Sul</td>
+                    <td class="num">2 839 000</td>
+                </tr>
+                <tr>
+                    <td>Minas Gerais</td>
+                    <td class="num">22 746 000</td>
+                </tr>
+                <tr>
+                    <td>Pará</td>
+                    <td class="num">9 235 000</td>
+                </tr>
+                <tr>
+                    <td>Paraíba</td>
+                    <td class="num">4 153 000</td>
+                </tr>
+                <tr>
+                    <td>Paraná</td>
+                    <td class="num">12 083 000</td>
+                </tr>
+                <tr>
+                    <td>Pernambuco</td>
+                    <td class="num">9 858 000</td>
+                </tr>
+                <tr>
+                    <td>Piauí</td>
+                    <td class="num">3 337 000</td>
+                </tr>
+                <tr>
+                    <td>Rio de Janeiro</td>
+                    <td class="num">17 514 000</td>
+                </tr>
+                <tr>
+                    <td>Rio Grande do Norte</td>
+                    <td class="num">3 600 000</td>
+                </tr>
+                <tr>
+                    <td>Rio Grande do Sul</td>
+                    <td class="num">11 466 000</td>
+                </tr>
+                <tr>
+                    <td>Rondônia</td>
+                    <td class="num">1 858 000</td>
+                </tr>
+                <tr>
+                    <td>Roraima</td>
+                    <td class="num">652 713</td>
+                </tr>
+                <tr>
+                    <td>Santa Catarina</td>
+                    <td class="num">7 577 000</td>
+                </tr>
+                <tr>
+                    <td>São Paulo</td>
+                    <td class="num">47 289 000</td>
+                </tr>
+                <tr>
+                    <td>Sergipe</td>
+                    <td class="num">2 356 000</td>
+                </tr>
+                <tr>
+                    <td>Tocantins</td>
+                    <td class="num">1 620 000</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th scope="row">Total</th>
+                    <td class="num">213 317 202</td> <!-- Total da população somada -->
+                </tr>
+            </tfoot>
+        </table>
+
+        <h1>Tabela Completa</h1>
+
+        <table>
+            <thead>
+                <tr>
+                    <th rowspan="2">Nome do Espectador</th>
+                    <th colspan="2">Filmes Assistidos</th>
+                    <th rowspan="2">Filme Favorito</th>
+                </tr>
+                <tr>
+                    <th>Quantidade</th>
+                    <th>Nota Média</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Maria</td>
+                    <td class="num">25</td>
+                    <td class="num">8.5</td>
+                    <td>Interestelar</td>
+                </tr>
+                <tr>
+                    <td>João</td>
+                    <td class="num">30</td>
+                    <td class="num">9.0</td>
+                    <td>O Poderoso Chefão</td>
+                </tr>
+                <tr>
+                    <td>Lucas</td>
+                    <td class="num">15</td>
+                    <td class="num">7.8</td>
+                    <td>Vingadores: Ultimato</td>
+                </tr>
+                <tr>
+                    <td>Ana</td>
+                    <td class="num">22</td>
+                    <td class="num">8.2</td>
+                    <td>O Senhor dos Anéis</td>
+                </tr>
+                <tr>
+                    <td>Fernanda</td>
+                    <td class="num">18</td>
+                    <td class="num">8.0</td>
+                    <td>Titanic</td>
+                </tr>
+                <tr>
+                    <td>Carlos</td>
+                    <td class="num">20</td>
+                    <td class="num">8.3</td>
+                    <td>Matrix</td>
+                </tr>
+                <tr>
+                    <td>Laura</td>
+                    <td class="num">17</td>
+                    <td class="num">8.1</td>
+                    <td>A Origem</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>Total</td>
+                    <td class="num">147</td> <!-- Somatório da quantidade de filmes assistidos -->
+                    <td class="num">8.28</td> <!-- Média das notas médias -->
+                    <td></td>
+                </tr>
+            </tfoot>
+        </table>
+</body>
+</html>
