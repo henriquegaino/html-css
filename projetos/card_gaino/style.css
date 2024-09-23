@@ -45,3 +45,7 @@ body{
     text-decoration: overline;
     color: black;
 }
+
+a{
+    text-decoration: none;
+}
