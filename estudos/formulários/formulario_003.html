@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atributos</title>
+</head>
+<body>
+    <h1>Teste de Formulário</h1>
+    <form action="cadastro.php" method="post" autocomplete="off">
+        <p>
+            <label for="inome">Nome do Aluno:</label>
+            <input type="text" name="nome" id="inome" required minlength="5">
+        </p>
+
+        <p>
+            <label for="imedia">Média:</label>
+            <input type="number" name="media" id="imedia" min="0" max="10" step="0.1">
+        </p>
+
+        <p>
+            <label for="iperiodo">Período Letivo:</label>
+            <input type="month" name="periodo" id="iperiodo">
+        </p>
+
+        <p>
+            <label for="idata">Data da Prova:</label>
+            <input type="date" name="data" id="idata">
+        </p>
+
+        <p>
+            <label for="itel">Data da Prova:</label>
+            <input type="tel" name="tel" id="itel" pattern="^[0-9]{4,5}-[0-9]{4}$">
+        </p>
+        <fieldset>
+            <legend>Sexo</legend>
+            <input type="radio" name="sexo" id="imasc" value="M"><label for="imasc">Masculino</label><br>
+            <input type="radio" name="sexo" id="ifem" value="F"><label for="ifem">Feminino</label><br>
+</fieldset>
+
+        <fieldset>
+            <legend>Matérias Favoritas</legend>
+            <input type="checkbox" name="esmat" id="iesmat"><label for="iesmat">Matemática</label><br>
+            <input type="checkbox" name="eshist" id="ieshist"><label for="ieshist">História</label><br>
+            <input type="checkbox" name="esgeo" id="iesgeo"><label for="iesgeo">Geografia</label><br>
+            <input type="checkbox" name="esfis" id="iesfis"><label for="iesfis">Física</label><br>
+        </fieldset>
+        <input type="submit" value="Enviar">
+
+    </form>
+</body>
+</html>

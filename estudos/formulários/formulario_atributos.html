@@ -3,23 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulário</title>
-    <style>
-        *{
-            font-family: Arial, Helvetica, sans-serif;
-        }
-    </style>
+    <title>Atributos</title>
 </head>
 <body>
-    <h1>Meu 1º Formulário</h1>
-
+    <h1>Teste de Formulário</h1>
     <form action="cadastro.php" method="post" autocomplete="off">
         <p><label for="inome">Nome:</label>
-        <input type="text" name="nome" id="inome"></p>
+        <input type="text" name="nome" id="inome" required minlength="5" placeholder="nome do usuário"></p>
 
-        <p><label for="isobrenome">Sobrenome:</label>
-        <input type="text" name="sobrenome" id="isobrenome"></p>
+        <p><label for="isenha">Senha:</label>
+        <input type="password" name="senha" id="isenha" required minlength="8" placeholder="senha do usuário"></p>
         <input type="submit" value="Enviar">
+
     </form>
 </body>
 </html>
