@@ -46,6 +46,44 @@ body{
     color: black;
 }
 
+.btn {  
+    display: flex;  
+    align-items: center;  
+    padding: 15px 30px; /* Ajusta o espaço interno dos botões */  
+    font-size: 18px; /* Ajuste o tamanho do texto */  
+    border: 2px solid #d3d3d3;  
+    border-radius: 5px;  
+    text-decoration: none;  
+    color: #333;  
+    transition: background-color 0.3s, border-color 0.3s;  
+    width: 300px; /* Ajuste a largura dos botões */  
+    text-align: left; 
+}
+
+.btn i {  
+    font-size: 24px; /* Ajuste o tamanho dos ícones */  
+    margin-right: 15px;  
+} 
+
+.btn.instagram {  
+    border-color: #C13584;  
+    color: #C13584;  
+}  
+
+.btn.instagram:hover {  
+    background-color: #C13584;  
+    color: #fff;  
+}  
+
+.btn.whatsapp {  
+    border-color: #25D366;  
+    color: #25D366;  
+}  
+
+.btn.whatsapp:hover {  
+    background-color: #25D366;  
+    color: #fff;  
+}  
 a{
     text-decoration: none;
 }
