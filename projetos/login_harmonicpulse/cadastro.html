@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastre-se - HarmonicPulse</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styleCadastro.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="main-cadastro">
+        <div class="login-buttons">
+            <h1>Cadastre-se com outra conta</h1>
+            <a href="https://google.com" class="btn google">
+                <i class="fab fa-google"></i> Fazer login com o Google
+            </a>
+            <a href="https://facebook.com" class="btn facebook">
+                <i class="fab fa-facebook"></i> Fazer login com o Facebook
+            </a>
+            <a href="https://twitter.com" class="btn twitter">
+                <i class="fab fa-twitter"></i> Fazer login com o Twitter
+            </a>
+            <img src="cadastro-animate.svg" alt="Animação SVG" class="imagem-animada">
+        </div>
+
+        <div class="right-cadastro">
+            <div class="card-cadastro">
+                <h1>Cadastre-se</h1>
+                <form action="cadastro.php" method="post" autocomplete="off">
+                    <div class="textfield">
+                        <label for="inomecompleto">Nome completo:</label>
+                        <input type="text" name="nomecompleto" id="inomecompleto" placeholder="Nome Sobrenome">
+                    </div>
+                    <div class="textfield">
+                        <label for="iusuario">Nome de usuário:</label>
+                        <input type="text" name="usuario" id="iusuario" placeholder="Usuário">
+                    </div>
+                    <div class="textfield">
+                        <label for="iemail">E-mail:</label>
+                        <input type="email" name="email" id="iemail" placeholder="example@example.com">
+                    </div>
+                    <div class="textfield">
+                        <label for="isenha">Senha:</label>
+                        <input type="password" name="senha" id="isenha" placeholder="Senha">
+                    </div>
+                    <div class="textfield">
+                        <label for="iconfirmsenha">Confirme sua senha:</label>
+                        <input type="password" name="confirmsenha" id="iconfirmsenha" placeholder="Confirme sua senha">
+                    </div>
+                    <button class="botao">Continuar cadastro</button>
+                    <div class="links">
+                        <h3>Já possui uma conta?</h3>
+                        <a href="login_harmonicpulse.html">Entrar</a> || 
+                        <a href="#">Esqueci a senha</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p><em>HarmonicPulse</em>... Desenvolvido por 
+            <em><a href="https://github.com/henriquegaino" target="_blank">Henrique Gaino</a></em>
+        </p>
+    </footer>
+</body>
+</html>

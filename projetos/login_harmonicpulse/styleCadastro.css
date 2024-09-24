@@ -1,0 +1,210 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.login-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-right: 20px;
+}
+
+.login-buttons h1 {
+    color: #00ff88;
+}
+
+.btn:active, .botao:active {
+    transform: scale(0.98);
+    opacity: 0.8;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    padding: 15px 30px; 
+    font-size: 18px; 
+    border: 2px solid #d3d3d3;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #333;
+    transition: background-color 0.3s, border-color 0.3s;
+    width: 300px; 
+    text-align: left;
+}
+
+.btn i {
+    font-size: 24px; 
+    margin-right: 15px;
+}
+
+.btn.google {
+    border-color: #db4437;
+    color: #db4437;
+}
+
+.btn.google:hover {
+    background-color: #db4437;
+    color: #fff;
+}
+
+.btn.facebook {
+    border-color: #4267B2;
+    color: #4267B2;
+}
+
+.btn.facebook:hover {
+    background-color: #4267B2;
+    color: #fff;
+}
+
+.btn.twitter {
+    border-color: #1DA1F2;
+    color: #1DA1F2;
+}
+
+.btn.twitter:hover {
+    background-color: #1DA1F2;
+    color: #fff;
+}
+
+.main-cadastro {
+    width: 100vw;
+    height: 100vh;
+    background: #201b2c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagem-animada {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.right-cadastro img {
+    max-width: 30%;
+    height: auto;
+    padding: 10px 30px 50px 70px;
+}
+
+.left-cadastro {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.left-cadastro h1 {
+    color: #77ffc0;
+    font-size: 3vw;
+}
+
+.imagem {
+    width: 35vw;
+}
+
+.right-cadastro {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-cadastro {
+    width: 60%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 35px;
+    background-color: #352d47;
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px #00000056;
+}
+
+.card-cadastro h1 {
+    color: #00ff88;
+    font-weight: 800;
+    margin: 0;
+}
+
+.textfield {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.textfield input {
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background: #514869;
+    color: #f0ffffde;
+    font-size: 12pt;
+    box-shadow: 0px 10px 40px #00000056;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.textfield label {
+    color: #f0ffffde;
+    margin-bottom: 10px;
+}
+
+.textfield input::placeholder {
+    color: #f0ffff94;
+}
+
+.botao {
+    width: 100%;
+    padding: 16px 0;
+    margin: 25px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 3px;
+    color: #2b134b;
+    background: #00ff88;
+    cursor: pointer;
+    box-shadow: 0px 10px 40px -12px #00000056;
+    margin: 30px auto 0;
+}
+
+.links {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.links h3 {
+    color: #f0ffffde;
+    padding: 10px;
+}
+
+.links a {
+    color: #f0ffffde;
+    text-decoration: none;
+}
+
+.links a:hover {
+    color: #00ff88;
+}
+
+footer {
+    background-color: black;
+    color: #f0ffffde;
+    text-align: center;
+    width: 100vw;
+}
