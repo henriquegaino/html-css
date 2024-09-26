@@ -64,20 +64,21 @@ section.imagem p{
     border-radius: 20px;
 }
 section#img1{
-    background-image: url(../imagens/background001.jpg);
+    background-image: url(../imagens/backgroundtechnology1.jpg);
     background-position: right center;
 }
 section#img2{
-    background-image: url(../imagens/background002.jpg);
+    background-image: url(../imagens/backgroundtechnology2.jpg);
     background-position: right center;
 }
+
 a{
     color: white;
     text-decoration: none;
     font-weight: bold;
 }
 a :hover{
-    text-decoration: underline;
+    color: blue;
 }
 
 footer{
