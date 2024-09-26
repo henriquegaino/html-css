@@ -208,3 +208,12 @@ footer {
     text-align: center;
     width: 100vw;
 }
+
+footer a{
+    color: #f0ffffde;
+    text-decoration: none;
+}
+
+footer a:hover{
+    color: #00ff88;
+}
