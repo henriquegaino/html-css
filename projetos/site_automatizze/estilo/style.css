@@ -88,7 +88,7 @@ header p {
 /* HTML MENU LOGO */
 
 .htmlmenu-logo {
-    padding-left: 30px;
+    padding-top: 25px;
     text-align: left;
     display: flex;
     align-items: center;
@@ -784,25 +784,20 @@ header p {
   
   /* Footer Styling */
   footer {
-    background-color: var(--cor5);
-    color: white;
+    background-color: black;
+    color: #f0ffffde;
     text-align: center;
-    padding: 10px 0;
-  }
-  
-  footer p {
-    font-size: 0.8em;
-  }
-  
-  footer a {
+    width: 100vw;
+}
+
+footer a{
+    color: #f0ffffde;
     text-decoration: none;
-    color: white;
-    transition: color 0.3s;
-  }
-  
-  footer a:hover {
-    color: var(--cor1);
-  }
+}
+
+footer a:hover{
+    color: #00ff88;
+}
   
   /* Animations */
   @keyframes fadeIn {

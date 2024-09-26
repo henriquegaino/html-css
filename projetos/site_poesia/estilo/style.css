@@ -81,9 +81,18 @@ a :hover{
     color: blue;
 }
 
-footer{
+footer {
     background-color: black;
-    color: white;
+    color: #f0ffffde;
     text-align: center;
-    padding: 10px;
+    width: 100vw;
+}
+
+footer a{
+    color: #f0ffffde;
+    text-decoration: none;
+}
+
+footer a:hover{
+    color: blue;
 }
