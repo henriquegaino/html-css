@@ -43,6 +43,11 @@ header .navegacao-primaria li a{
     font-size: 1.3rem;
 }
 
+header .navegacao-primaria li a:hover{
+    padding: 10px;
+    color: #35F2F2;
+}
+
 .section-div{
     animation: inicializar .7s forwards;
     background-color: black;
@@ -75,7 +80,16 @@ header .navegacao-primaria li a{
     color: white;
     padding: 15px 40px;
     border-radius: 5px;
-    border: 2px solid white;
+    border: 2px solid #35F2F2;
+}
+
+.section-div div a:hover{
+    justify-self: start;
+    color: black;
+    padding: 15px 40px;
+    border-radius: 5px;
+    background-color: #35F2F2;
+    border: 2px solid #35F2F2;
 }
 
 .section-div img{
@@ -148,7 +162,7 @@ main .sobre{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    gap: 5px;
 }
 
 .sobre_titulo span{
@@ -250,5 +264,37 @@ main .sobre{
     
     to{
         transform: translate3d(0, 0, 0,)
+    }
+}
+
+/*RESPONSIVO*/
+@media(max-width: 992px){
+    .section-div img{
+        display: none;
+    }
+    .section-div{
+        background-image: url(eu.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    header .navegacao-primaria{
+        display: none;
+    }
+
+    header i{
+        color: white;
+        font-size: 3rem;
+    }
+}
+
+@media(max-width: 992px){
+    .sobre img{
+        grid-column: 1/-1;
+        justify-self: center;
+    }
+
+    .sobre_conteudo{
+        grid: 1/-1;
     }
 }
