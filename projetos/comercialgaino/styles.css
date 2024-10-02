@@ -1,0 +1,237 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000000;
+    color: #ffffff;
+}
+
+/* Header */
+header {
+    background-color: #000;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo img {
+    width: 200px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    transition: background-color 0.5s;
+    border-radius: 5px;
+}
+
+nav ul li a:hover {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    background-color: #c00;
+    border-radius: 5px;
+}
+
+/* Hero Section */
+.slideshow-container {
+  position: relative;
+  max-width: 100%;
+  height: 100vh; /* Ajusta para ocupar a tela toda */
+  margin: 100px 20px 30px 0px;
+  overflow: hidden; /* Esconde o conteúdo fora da área do slide */
+}
+
+.mySlides {
+  display: none;
+}
+
+.mySlides img {
+  width: 100vw;
+  height: 100vh; /* Ajusta a altura para cobrir a tela */
+  object-fit: cover;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+
+.hero-text{
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 25px;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5), 
+               4px 4px 6px rgba(0, 0, 0, 0.3);
+}
+.hero-text h1 span{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 50px;
+    margin-bottom: 10px;
+    color: #c00;
+}
+
+.hero-text p {
+    font-size: 24px;
+}
+
+/* About Section */
+.about-section {
+    padding: 50px;
+    background-color: #000000;
+    color: #ffffff;
+    text-align: center;
+}
+/*Produtos Section*/
+section#produtos {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.produto {
+    padding: 20px;
+    background-color: #141414;
+    border: 10px solid rgb(0, 0, 0);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 50px;
+}
+
+.produto h2 {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    color: #ffffff;
+}
+
+.produto p,
+.produto ul {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+}
+
+.produto ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.produto ul li {
+    margin-bottom: 8px;
+}
+
+
+/* Location Section */
+.location-section{
+    text-align: center;
+    margin: 40px 0;
+}
+
+.mapa {
+    margin: 0 auto;
+    border: 5px solid #ff0000;
+    width: 600px;
+    height: 450px; /* Borda vermelha */
+    border-radius: 8px;
+    overflow: hidden; /* Para arredondar os cantos */
+}
+
+/* Contact Section */
+.mediaCard{
+    background: url(gaino.jpg) center/cover;
+    height: 200px;
+    width: 100%;
+}
+
+.bottomCard{
+    padding: 20px 20px;
+}
+
+.actionsCard{
+    background: none;
+    border: none;
+    text-decoration: none;
+    color: #ffffff;
+    text-align: center;
+}
+
+.actionsCard :hover{
+    color: black;
+}
+
+.btn {  
+    display: flexbox;  
+    padding: 5px 10px; /* Ajusta o espaço interno dos botões */  
+    font-size: 20px; /* Ajuste o tamanho do texto */  
+    border: 2px solid #d3d3d3;  
+    border-radius: 5px;  
+    text-decoration: none;  
+    color: #333;  
+    transition: background-color 0.3s, border-color 0.3s;  
+    width: 200px; /* Ajuste a largura dos botões */  
+    margin-top: 20px;
+    
+}
+
+.btn i {  
+    font-size: 24px; /* Ajuste o tamanho dos ícones */  
+    margin-right: 10px;  
+} 
+
+.btn.instagram {  
+    border-color: #C13584;  
+    color: #C13584;  
+}  
+
+.btn.instagram:hover {  
+    background-color: #C13584;  
+    color: #fff;  
+}  
+
+.btn.whatsapp {  
+    border-color: #25D366;  
+    color: #25D366;  
+}  
+
+.btn.whatsapp:hover {  
+    background-color: #25D366;  
+    color: #fff;  
+}  
+a{
+    text-decoration: none;
+}
+
+/* Footer */
+footer {
+    background-color: #ffffff;
+    color: #000000;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+}
