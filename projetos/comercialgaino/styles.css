@@ -163,12 +163,6 @@ section#produtos {
 }
 
 /* Contact Section */
-.mediaCard{
-    background: url(gaino.jpg) center/cover;
-    height: 200px;
-    width: 100%;
-}
-
 .bottomCard{
     padding: 20px 20px;
 }
