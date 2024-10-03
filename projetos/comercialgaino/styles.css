@@ -7,7 +7,7 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #000000;
-    color: #ffffff;
+    color: #909090;
 }
 
 /* Header */
@@ -17,11 +17,21 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0;
     position: fixed;
-    width: 100%;
+    padding: 0;
     top: 0;
+    width: 100%;
     z-index: 1000;
+}
+h2{
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    color: #cdcdcd;
+    padding: 5px;
+}
+
+h3{
+    padding: 10px;
 }
 
 .logo img {
@@ -57,9 +67,10 @@ nav ul li a:hover {
 .slideshow-container {
   position: relative;
   max-width: 100%;
-  height: 100vh; /* Ajusta para ocupar a tela toda */
+  height: 85vh; /* Ajusta para ocupar a tela toda */
   margin: 100px 20px 30px 0px;
   overflow: hidden; /* Esconde o conteúdo fora da área do slide */
+  padding-left: 10px;
 }
 
 .mySlides {
@@ -106,8 +117,8 @@ nav ul li a:hover {
 .about-section {
     padding: 50px;
     background-color: #000000;
-    color: #ffffff;
-    text-align: center;
+    color: #909090;
+    line-height: 1.5;
 }
 /*Produtos Section*/
 section#produtos {
@@ -123,12 +134,6 @@ section#produtos {
     border: 10px solid rgb(0, 0, 0);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     border-radius: 50px;
-}
-
-.produto h2 {
-    font-size: 1.8em;
-    margin-bottom: 15px;
-    color: #ffffff;
 }
 
 .produto p,
