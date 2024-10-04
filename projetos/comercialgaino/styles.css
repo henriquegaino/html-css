@@ -23,6 +23,10 @@ header {
     width: 100%;
     z-index: 1000;
 }
+
+strong{
+    color: white;
+}
 h2{
     font-size: 1.8em;
     margin-bottom: 15px;
