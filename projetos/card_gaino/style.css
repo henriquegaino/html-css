@@ -1,32 +1,44 @@
+/* Definindo a codificação de caracteres para UTF-8 */
 @charset "UTF-8";
+
+/* Importando a fonte Roboto do Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap');
 
+/* Resetando a margem e o padding de todos os elementos para garantir consistência */
 *{
     margin: 0;
     padding: 0;
 }
+
+/* Estilo global do corpo da página, definindo a fonte padrão como Roboto */
 body{
     font-family: "Roboto", sans-serif;
 }
+
+/* Centralizando o conteúdo horizontal e verticalmente na tela */
 .content{
     display: flex;
     justify-content: center;
     align-items: center;
     align-content: center;
     width: 100%;
-    height: 100vh;
+    height: 100vh; /* A altura da página ocupará 100% da altura da viewport */
 }
 
+/* Estilo para o título principal, com espaçamento na parte superior e inferior */
 .title{
     padding-top: 10px;
     padding-bottom: 20px;
     text-align: center;
 }
 
+/* Estilizando a parte superior do cartão, removendo o padding superior */
 .topcard{
     padding: 20px;
     padding-top: 0px;
 }
+
+/* Estilo do cartão principal, com sombra, bordas arredondadas e tamanho fixo */
 .card{
     background-color: white;
     box-shadow: 0px 2px 18px black;
@@ -34,16 +46,19 @@ body{
     width: 400px;
 }
 
+/* Definindo a imagem de fundo do cartão de mídia e seu comportamento */
 .mediaCard{
-    background: url(gaino.jpg) center/cover;
+    background: url(gaino.jpg) center/cover; /* Imagem centralizada e coberta */
     height: 200px;
-    width: 100%;
+    width: 100%; /* Largura completa do cartão */
 }
 
+/* Estilo da parte inferior do cartão com padding */
 .bottomCard{
     padding: 20px 20px;
 }
 
+/* Estilização dos botões e ações do cartão */
 .actionsCard{
     background: none;
     border: none;
@@ -52,11 +67,13 @@ body{
     text-align: center;
 }
 
+/* Efeito hover para as ações do cartão (subtítulo com linha ao passar o mouse) */
 .actionsCard :hover{
     text-decoration: overline;
     color: black;
 }
 
+/* Estilo padrão para os botões, com padding, fonte, bordas e transições */
 .btn {  
     display: flexbox;  
     padding: 5px 10px; /* Ajusta o espaço interno dos botões */  
@@ -65,52 +82,61 @@ body{
     border-radius: 5px;  
     text-decoration: none;  
     color: #333;  
-    transition: background-color 0.3s, border-color 0.3s;  
+    transition: background-color 0.3s, border-color 0.3s; /* Efeito suave ao passar o mouse */  
     width: 200px; /* Ajuste a largura dos botões */  
     margin-top: 20px;
-    
 }
 
+/* Estilo dos ícones dentro dos botões */
 .btn i {  
     font-size: 24px; /* Ajuste o tamanho dos ícones */  
-    margin-right: 10px;  
+    margin-right: 10px; /* Espaçamento entre o ícone e o texto */  
 } 
 
+/* Estilização do botão de Instagram com borda e cor específica */
 .btn.instagram {  
     border-color: #C13584;  
     color: #C13584;  
 }  
 
+/* Efeito hover para o botão do Instagram (fundo e cor do texto mudam) */
 .btn.instagram:hover {  
     background-color: #C13584;  
     color: #fff;  
 }  
 
+/* Estilização do botão de WhatsApp com borda e cor específica */
 .btn.whatsapp {  
     border-color: #25D366;  
     color: #25D366;  
 }  
 
+/* Efeito hover para o botão do WhatsApp (fundo e cor do texto mudam) */
 .btn.whatsapp:hover {  
     background-color: #25D366;  
     color: #fff;  
 }  
+
+/* Removendo a decoração de sublinhado de todos os links */
 a{
     text-decoration: none;
 }
 
+/* Estilização do rodapé com fundo preto e texto centralizado */
 footer {
     background-color: black;
-    color: #f0ffffde;
+    color: #f0ffffde; /* Cor do texto levemente transparente */
     text-align: center;
-    width: 100vw;
+    width: 100vw; /* O rodapé ocupa a largura total da viewport */
 }
 
+/* Estilizando os links dentro do rodapé */
 footer a{
     color: #f0ffffde;
     text-decoration: none;
 }
 
+/* Efeito hover nos links do rodapé (muda a cor ao passar o mouse) */
 footer a:hover{
     color: #f01010;
 }
